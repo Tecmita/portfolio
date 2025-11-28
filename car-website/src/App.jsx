@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import Carrousel from "./components/Carrousel";
-import { carrousel } from "./data/carData";
+import { carData } from "./data/carData";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <div>
-        <Carrousel slides={carrousel} />
+        <Carrousel slides={carData} speed={40} />
       </div>
     </div>
   );

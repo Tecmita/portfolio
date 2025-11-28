@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div
         className="flex flex-col relative justify-center items-center mx-6
         md:flex-row  md:mx-auto md:items-center md:w-full  
-        xl:flex-row xl:
+        xl:flex-row 
       
       "
       >

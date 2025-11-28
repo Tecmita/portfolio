@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 
 const CardContent = ({ item }) => (
   <div className="flex relative items-center justify-center bg-[#111213] p-6 rounded-3xl h-[290px] w-[200px] text-white mt-20">
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute rounded-3xl inset-0 overflow-hidden pointer-events-none">
       <div
         className="
-          absolute w-[100px] h-[160px] 
-          top-1 left-1
+          absolute w-[120px] h-[180px]
+          top-[-10%] left-[-10%]
           bg-[radial-gradient(circle_at_top_left,_rgba(55,74,109,1)_0%,_rgba(55,74,109,0.5)_40%,_transparent_80%)]
           blur-[60px] 
         "
@@ -98,7 +98,6 @@ const Carrousel = ({ slides }) => {
         >
           {slides.map((item, i) => (
             <div key={i} className="min-w-full flex justify-center">
-              {" "}
               <CardContent item={item} />
             </div>
           ))}
@@ -128,6 +127,17 @@ const Carrousel = ({ slides }) => {
             }`}
           />
         ))}
+      </div>
+      <div className="hidden md:block">
+        <div className="max-w-7xl mx-auto px-4 lg:max-w-3xl xl:max-w-4xl 2xl:max-w-7xl">
+          <div className="flex flex-wrap justify-center gap-8">
+            {slides.map((item, i) => (
+              <div key={i} className="flex justify-center">
+                <CardContent item={item} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

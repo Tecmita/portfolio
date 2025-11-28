@@ -24,7 +24,7 @@ const prices = [175900, 114900, 150900, 125900, 128900];
 const acceleration = [2.7, 3.7, 3.2, 4.0, 3.9];
 const maxSpeed = [330, 356, 340, 320, 376];
 
-export const carrousel = models.map((currentModelName, index) => ({
+export const carData = models.map((currentModelName, index) => ({
   name: "Porsche",
   model: currentModelName,
   acceleration: acceleration[index],
