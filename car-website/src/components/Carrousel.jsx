@@ -36,7 +36,12 @@ const Carrousel = ({ slides }) => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="relative w-full mb-15">
+    <div className="mt-20 relative w-full mb-15">
+      <div className="flex justify-center items-center">
+        <h2 className="max-w-[220px] text-center text-white text-xl">
+          Choose Your Electric Car Of The Porsche Brand
+        </h2>
+      </div>
       <div
         className="md:hidden relative overflow-hidden"
         ref={containerRef}

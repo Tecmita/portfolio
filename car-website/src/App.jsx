@@ -7,6 +7,7 @@ import Carrousel from "./components/Carrousel";
 import { carData } from "./data/carData";
 import PopularFeatures from "./components/PopularFeatures";
 import Features from "./components/Features";
+import Offers from "./components/Offers";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </div>
       <PopularFeatures />
       <Features />
+      <Offers />
     </div>
   );
 }
