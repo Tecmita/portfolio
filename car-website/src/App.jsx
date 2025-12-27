@@ -8,6 +8,7 @@ import { carData } from "./data/carData";
 import PopularFeatures from "./components/PopularFeatures";
 import Features from "./components/Features";
 import Offers from "./components/Offers";
+import Brands from "./components/Brands";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <PopularFeatures />
       <Features />
       <Offers />
+      <Brands />
     </div>
   );
 }
